@@ -10,7 +10,7 @@
     - [x] Create GitHub Repository `myfusionnotes` <!-- id: 5 -->
     - [x] Clone and Initialize Next.js Project <!-- id: 6 -->
 - [ ] Core Infrastructure
-    - [ ] Configure Vercel Project <!-- id: 7 -->
+    - [x] Configure Vercel Project <!-- id: 7 -->
     - [x] Set up Clerk Authentication <!-- id: 8 -->
     - [x] Set up Vercel Postgres <!-- id: 9 -->
     - [ ] Set up Stripe (Product, Webhooks) <!-- id: 16 -->
