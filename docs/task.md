@@ -15,9 +15,14 @@
     - [x] Set up Vercel Postgres <!-- id: 9 -->
     - [ ] Set up Stripe (Product, Webhooks) <!-- id: 16 -->
 - [ ] Feature Implementation: Foundation
-    - [ ] Implement Dashboard Layout <!-- id: 10 -->
+    - [x] Implement Dashboard Layout <!-- id: 10 -->
+    - [x] Create "Connections" Management (Auth for CRMs/Support) <!-- id: 11 -->
     - [ ] Create "Billing" Page (Checkout/Portal) <!-- id: 17 -->
-    - [ ] Create "Connections" Management (Auth for CRMs/Support) <!-- id: 11 -->
+- [ ] Feature Implementation: Zendesk App
+    - [ ] Create `manifest.json` for Zendesk <!-- id: 18 -->
+    - [ ] Create Sidebar Page (`/dashboard/integrations/zendesk/sidebar`) <!-- id: 19 -->
+    - [ ] Implement ZAF Client (Context/Message Passing) <!-- id: 20 -->
+    - [ ] Verify functionality in Zendesk "Private App" mode <!-- id: 21 -->
 - [ ] Feature Implementation: Core Logic
     - [ ] Implement Webhook/Event Receivers (from Support Desk) <!-- id: 12 -->
     - [ ] Implement Sync Logic (Note Creation) <!-- id: 13 -->

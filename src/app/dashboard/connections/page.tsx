@@ -8,6 +8,7 @@ import {
 } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
+import { ConnectionDialog } from "@/components/connection-dialog"
 
 const integrations = [
   {
@@ -60,9 +61,11 @@ export default function ConnectionsPage() {
               </p>
             </CardContent>
             <CardFooter>
-              <Button className="w-full" variant={integration.status === 'connected' ? "outline" : "default"}>
-                {integration.status === 'connected' ? "Manage" : "Connect"}
-              </Button>
+              {integration.status === 'connected' ? (
+                  <Button className="w-full" variant="outline">Manage</Button>
+              ) : (
+                  <ConnectionDialog integration={integration} />
+              )}
             </CardFooter>
           </Card>
         ))}
