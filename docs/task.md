@@ -14,18 +14,23 @@
     - [x] Set up Clerk Authentication <!-- id: 8 -->
     - [x] Set up Vercel Postgres <!-- id: 9 -->
     - [ ] Set up Stripe (Product, Webhooks) <!-- id: 16 -->
-- [ ] Feature Implementation: Foundation
-    - [x] Implement Dashboard Layout <!-- id: 10 -->
-    - [x] Create "Connections" Management (Auth for CRMs/Support) <!-- id: 11 -->
-    - [ ] Create "Billing" Page (Checkout/Portal) <!-- id: 17 -->
+- [ ] Feature Implementation: Billing & Subscriptions
+    - [ ] Create Stripe Helper (`lib/stripe.ts`) <!-- id: 22 -->
+    - [ ] Create Pricing/Billing Page UI <!-- id: 23 -->
+    - [ ] Implement Checkout Session Server Action <!-- id: 24 -->
+    - [ ] Implement Stripe Webhook Handler (`api/webhooks/stripe`) <!-- id: 25 -->
+    - [ ] Verify Subscription State in Middleware/Sync Logic <!-- id: 26 -->
 - [ ] Feature Implementation: Zendesk App
     - [ ] Create `manifest.json` for Zendesk <!-- id: 18 -->
     - [ ] Create Sidebar Page (`/dashboard/integrations/zendesk/sidebar`) <!-- id: 19 -->
     - [ ] Implement ZAF Client (Context/Message Passing) <!-- id: 20 -->
     - [ ] Verify functionality in Zendesk "Private App" mode <!-- id: 21 -->
-- [ ] Feature Implementation: Core Logic
-    - [ ] Implement Webhook/Event Receivers (from Support Desk) <!-- id: 12 -->
-    - [ ] Implement Sync Logic (Note Creation) <!-- id: 13 -->
-    - [ ] Implement AI Summarization <!-- id: 14 -->
+- [ ] Feature Implementation: Deep Integrations
+    - [ ] Implement Real Keap REST API Client (`lib/integrations/keap.ts`) <!-- id: 27 -->
+    - [ ] Implement Real Zendesk API Client (`lib/integrations/zendesk.ts`) <!-- id: 28 -->
+    - [ ] Encrypt/Decrypt Credentials Logic <!-- id: 29 -->
+- [ ] Deployment & Polish
+    - [ ] Create Deployment Checklist <!-- id: 30 -->
+    - [ ] Finalize Walkthrough Artifact <!-- id: 31 -->
 - [ ] Verification
     - [ ] Verify End-to-End Flow (Mock Ticket -> Note in Mock CRM) <!-- id: 15 -->
