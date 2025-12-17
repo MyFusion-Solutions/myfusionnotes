@@ -1,0 +1,26 @@
+# Task List: MyFusion Notes Rebuild
+
+- [x] Project Planning & Architecture
+    - [x] Research Legacy App (Done)
+    - [x] Create Implementation Plan <!-- id: 1 -->
+    - [x] Design Data Schema (Postgres) <!-- id: 2 -->
+    - [x] Design API Architecture (Adapters for Multi-Platform) <!-- id: 3 -->
+- [x] Repository Setup
+    - [x] Identify GitHub Organization <!-- id: 4 -->
+    - [x] Create GitHub Repository `myfusionnotes` <!-- id: 5 -->
+    - [x] Clone and Initialize Next.js Project <!-- id: 6 -->
+- [ ] Core Infrastructure
+    - [ ] Configure Vercel Project <!-- id: 7 -->
+    - [x] Set up Clerk Authentication <!-- id: 8 -->
+    - [x] Set up Vercel Postgres <!-- id: 9 -->
+    - [ ] Set up Stripe (Product, Webhooks) <!-- id: 16 -->
+- [ ] Feature Implementation: Foundation
+    - [ ] Implement Dashboard Layout <!-- id: 10 -->
+    - [ ] Create "Billing" Page (Checkout/Portal) <!-- id: 17 -->
+    - [ ] Create "Connections" Management (Auth for CRMs/Support) <!-- id: 11 -->
+- [ ] Feature Implementation: Core Logic
+    - [ ] Implement Webhook/Event Receivers (from Support Desk) <!-- id: 12 -->
+    - [ ] Implement Sync Logic (Note Creation) <!-- id: 13 -->
+    - [ ] Implement AI Summarization <!-- id: 14 -->
+- [ ] Verification
+    - [ ] Verify End-to-End Flow (Mock Ticket -> Note in Mock CRM) <!-- id: 15 -->
