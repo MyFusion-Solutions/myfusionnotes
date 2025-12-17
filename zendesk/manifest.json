@@ -1,0 +1,20 @@
+{
+  "name": "MyFusion Notes",
+  "author": {
+    "name": "MyFusion Solutions",
+    "email": "support@myfusionsolutions.com",
+    "url": "https://myfusionnotes.com"
+  },
+  "defaultLocale": "en",
+  "private": true,
+  "location": {
+    "support": {
+      "ticket_sidebar": {
+        "url": "https://myfusionnotes.com/integration/zendesk/sidebar",
+        "flexible": true
+      }
+    }
+  },
+  "version": "1.0.0",
+  "frameworkVersion": "2.0"
+}

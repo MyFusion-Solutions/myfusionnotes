@@ -1,0 +1,8 @@
+{
+  "app": {
+    "name": "MyFusion Notes",
+    "short_description": "Use AI to sync tickets to your CRM.",
+    "long_description": "MyFusion Notes connects Zendesk to Keap, HubSpot, and Salesforce. It uses AI to summarize ticket interactions and syncs them as enriched notes to your CRM contact records.",
+    "installation_instructions": "1. Install the app.\n2. Navigate to a ticket.\n3. Open the sidebar to connect your account."
+  }
+}
