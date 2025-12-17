@@ -1,36 +1,68 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# MyFusion Notes 2025
 
-## Getting Started
+**Clean. Lean. AI-Powered.**
 
-First, run the development server:
+MyFusion Notes is a SaaS platform that bridges the gap between Support Desks (Zendesk, Freshdesk, etc.) and CRMs (Keap, HubSpot, Salesforce). It syncs tickets as enriched notes, utilizing AI to summarize interactions and automate CRM updates.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🚀 Stack
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Framework**: [Next.js 14+](https://nextjs.org/) (App Router)
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **Database**: [Vercel Postgres](https://vercel.com/postgres) (Neon)
+- **ORM**: [Drizzle ORM](https://orm.drizzle.team/)
+- **Auth**: [Clerk](https://clerk.com/)
+- **AI**: Vercel AI SDK (OpenAI/Anthropic)
+- **Deployment**: [Vercel](https://vercel.com/)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🛠️ Setup
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1.  **Clone the repo**:
+    ```bash
+    git clone https://github.com/MyFusion-Solutions/myfusionnotes.git
+    cd myfusionnotes
+    ```
 
-## Learn More
+2.  **Install dependencies**:
+    ```bash
+    npm install
+    ```
 
-To learn more about Next.js, take a look at the following resources:
+3.  **Environment Variables**:
+    Create a `.env.local` file with:
+    ```env
+    # Clerk
+    NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=pk_test_...
+    CLERK_SECRET_KEY=sk_test_...
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+    # Database (Vercel Postgres)
+    POSTGRES_URL="postgres://..."
+    POSTGRES_PRISMA_URL="..."
+    POSTGRES_URL_NON_POOLING="..."
+    POSTGRES_USER="..."
+    POSTGRES_HOST="..."
+    POSTGRES_PASSWORD="..."
+    POSTGRES_DATABASE="..."
+    ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+4.  **Run Development Server**:
+    ```bash
+    npm run dev
+    ```
 
-## Deploy on Vercel
+## 🏗️ Architecture
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **`src/app`**: Next.js App Router pages and API routes.
+- **`src/lib`**: Shared utilities (DB connection, integration helpers).
+- **`src/db`**: Database schema and migrations.
+- **`src/components`**: React components.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🤖 AI Features
+
+- **Ticket Summarization**: Condenses long support threads into concise CRM notes.
+- **Sentiment Analysis**: Tags contacts based on interaction tone.
+- **Action Items**: Extracts follow-up tasks for Sales/Success teams.
+
+---
+
+© 2025 MyFusion Solutions
